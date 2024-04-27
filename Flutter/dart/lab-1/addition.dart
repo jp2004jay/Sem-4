@@ -1,16 +1,16 @@
 import 'dart:io';
 
-void main(){
-    String a,b;
-    int sum;
+void main() {
+  int a, b;
+  int sum;
 
-    print("Enter first number: ");
-    a = stdin.readLineSync()!;
+  print("Enter first number: ");
+  a = int.parse(stdin.readLineSync()!);
 
-    print("Enter second number: ");
-    b = stdin.readLineSync()!;
+  print("Enter second number: ");
+  b = int.parse(stdin.readLineSync()!);
 
-    sum = int.parse(a) + int.parse(b);
+  sum = a + b;
 
-    print("Sum is: $sum");
+  print("Sum is: $sum");
 }
